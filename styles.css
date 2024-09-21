@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.album {
+    background-color: #b8b8b8;
+} 
+
+.title {
+    background-color: #b8b8b8;
+    text-align: center;
+    padding: 20px;
+}
+    img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    display: block;
+}
+
+.progress-stacked {
+margin-bottom: 10px;
+}
+
+.progress-bar.html {
+    background-color: #f16529;
+    color: #ffffff;
+}
+.progress-bar.css {
+    background-color: #0067eb;
+    color: #ffffff;
+}
+.progress-bar.js {
+    background-color: #f5da61;
+    color: #000000;
+}
+
+.card-text {
+    font-weight: 500;
+}
