@@ -3,14 +3,11 @@
     margin: 0;
     padding: 0;
 }
-.album {
-    background-color: #b8b8b8;
-} 
 
 .title {
-    background-color: #b8b8b8;
     text-align: center;
     padding: 20px;
+    background-color: #b8b8b8;
 }
     img {
     width: 100%;
@@ -52,4 +49,16 @@ margin-bottom: 10px;
     position: relative;
     color: white;
     cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: rgb(196, 196, 196);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+        .album {
+            background-color: #b8b8b8;
+        } 
 }
