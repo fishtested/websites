@@ -93,3 +93,6 @@ a:hover {
     background-clip: text;
     color: transparent;
 }
+.row {
+     padding: 10%;
+} 
