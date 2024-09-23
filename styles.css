@@ -53,8 +53,12 @@ margin-bottom: 10px;
 
 @media (prefers-color-scheme: light) {
     body {
-        background-color: rgb(196, 196, 196);
+        background-color: #c4c4c4;
     }
+    .row {
+        background-color: #ececec;
+        color: #000000;
+    } 
 }
 
 @media (prefers-color-scheme: dark) {
