@@ -39,3 +39,17 @@ margin-bottom: 10px;
 .card-text {
     font-weight: 500;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn:hover {
+    background: linear-gradient(105deg, rgba(155, 163, 203, 1) 0%, rgba(3, 18, 221, 1) 100%);
+    background-clip: padding-box;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
