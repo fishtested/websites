@@ -73,6 +73,9 @@ margin-bottom: 10px;
 
 .heading {
     border-radius: 10px;
+    padding: 10%;
+    animation: zoomIn;
+    animation-duration: 1s;
 }
 
 .name {
@@ -93,6 +96,13 @@ a:hover {
     background-clip: text;
     color: transparent;
 }
-.heading {
-     padding: 10%;
-} 
+
+#background-header {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+}
+
+.album {
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
