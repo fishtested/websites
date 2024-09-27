@@ -114,3 +114,7 @@ a:hover {
 .lines {
     font-weight: 700;
 }
+
+.progress {
+    margin-bottom: 10px;
+}
