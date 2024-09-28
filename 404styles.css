@@ -1,0 +1,10 @@
+body {
+    background-color: #000000;
+    font-family: "Source Code Pro";
+    color: #025e02;
+    font-size: 12px;
+}
+
+.file, #line2 {
+    color: #ffffff;
+}
