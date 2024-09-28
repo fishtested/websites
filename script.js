@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Found my secrets, have you? Can we be friends?')
     function updateImages () {
         // SimpleIP
     const simpleIP =  document.getElementById('simpleIP')
@@ -31,6 +32,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 }
 }
 updateImages();
+
 });
 
 function randomProject() {
@@ -43,32 +45,53 @@ function randomProject() {
         6, // SoundButtonWebsiteThing
         7, // Cat Facts
         8, // Generate a Passphrase
+
     ];
     project = projects[Math.floor(Math.random() * projects.length)];
 
     if (project == "1") {
-        window.location.href='https://weather.dino.icu'
+        if (confirm("Random project: Weather Somewhere")) {
+            window.location.href='https://weather.dino.icu'
+          }
     }
     if (project == "2") {
+        if (confirm("Random project: SimpleIP")) {
         window.location.href='https://simpleip.netlify.app'
+        }
     }
     if (project == "3") {
+        if (confirm("Random project: Comicify")) {
         window.location.href='https://addons.mozilla.org/en-US/firefox/addon/comicify1/'
+        }
     }
     if (project == "4") {
+        if (confirm("Random project: SimpleTime")) {
         window.location.href='https://simpletime1.netlify.app'
+        }
     }
     if (project == "5") {
+        if (confirm("Random project: RandomWord")) {
         window.location.href='https://randomword1.netlify.app'
+        }
     }
     if (project == "6") {
+        if (confirm("Random project: SoundButtonWebsiteThing")) {
         window.location.href='https://soundbuttonwebsitething.netlify.app'
+        }
     }
     if (project == "7") {
+        if (confirm("Random project: Cat Facts")) {
         window.location.href='https://catfacts1.netlify.app'
+        }
     }
     if (project == "8") {
+        if (confirm("Random project: Generate a Passphrase")) {
         window.location.href='https://generateapassphrase.netlify.app'
+        }
     }
-
+}
+function placeholder() {
+    if (confirm("Insert text here")) {
+        window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    }
 }
