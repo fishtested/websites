@@ -1,5 +1,6 @@
 // AI disclosure: I used ChatGPT to assist troubleshooting the directories.
 document.addEventListener("DOMContentLoaded", function() {
+    console.log('How did you get here? Why are you reading this?')
     // Fetch the IP address from the ipify API
     fetch("https://api.ipify.org?format=json")
         .then(response => response.json())
