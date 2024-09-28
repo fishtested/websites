@@ -95,3 +95,30 @@ function placeholder() {
         window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     }
 }
+function openWS() {
+    window.location.href='https://weather.dino.icu'
+}
+function openSIP() {
+    window.location.href='https://simpleip.netlify.app'
+}
+function openComicify() {
+    window.location.href='https://addons.mozilla.org/en-US/firefox/addon/comicify1/'
+}
+function openST() {
+    window.location.href='https://simpletime1.netlify.app'
+}
+function openRW() {
+    window.location.href='https://randomword1.netlify.app'
+}
+function openSBWT() {
+    window.location.href='https://soundbuttonwebsitething.netlify.app'
+}
+function openCF() {
+    window.location.href='https://catfacts1.netlify.app'
+}
+function openGaP() {
+    window.location.href='https://generateapassphrase.netlify.app'
+}
+function openWebsites() {
+    window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+}
