@@ -118,3 +118,9 @@ a:hover {
 .progress {
     margin-bottom: 10px;
 }
+
+.deploy {
+    width: 118px;
+    height: 20px;
+    margin-bottom: 10px;
+}
