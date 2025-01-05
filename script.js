@@ -45,6 +45,7 @@ function randomProject() {
         6, // SoundButtonWebsiteThing
         7, // Cat Facts
         8, // Generate a Passphrase
+        9, // Christmas Facts
 
     ];
     project = projects[Math.floor(Math.random() * projects.length)];
@@ -89,6 +90,11 @@ function randomProject() {
         window.location.href='https://generateapassphrase.netlify.app'
         }
     }
+    if (project == "9") {
+        if (confirm("Random project: Christmas Facts")) {
+            window.location.href='https://fishtested.github.io/Christmas-facts/'
+        }
+    }
 }
 function placeholder() {
     if (confirm("Insert text here")) {
@@ -121,4 +127,7 @@ function openGaP() {
 }
 function openWebsites() {
     window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+}
+function openCF() {
+    window.location.href='https://fishtested.github.io/Christmas-facts/'
 }
