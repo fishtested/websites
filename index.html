@@ -7,16 +7,17 @@
     <link href="styles.css" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/861a7b7be2.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
   <div id="background-header">
   <section class="py-5 text-center container">
-    <div class="row py-lg-5 heading">
+    <div class="row py-lg-5 heading"  id="main-heading">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-bold">I'm <span class="name">fishtested</span></h1>
         <p class="lead">and I like to make (and break) things</p>
-        <h4 class="lead"><span class="lines">2500+ lines</span> 266 commits</h4>
+        <h4 class="lead"><span class="lines">2500+ lines</span> 269 commits</h4>
         <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="40.61" aria-valuemin="0" aria-valuemax="100">
           <div class="progress-bar html" style="width: 40.61%" title="40.61%">HTML 40.61%</div>
         </div>
@@ -28,20 +29,20 @@
         </div>
         
         <div class="btn-group">
-          <button type="button" class="btn btn-lg btn-outline-dark" onclick="window.location.href='https://github.com/fishtested'">GitHub profile</button>
-          <button type="button" class="btn btn-lg btn-outline-dark" onclick="randomProject()">Random project</button>
-          <button type="button" class="btn btn-lg btn-outline-dark" onclick="placeholder()">Button 3</button>
+          <button type="button" class="btn btn-lg btn-outline-dark" id="button1" onclick="window.location.href='https://github.com/fishtested'"><i class="fa-brands fa-github"></i><span class="tooltip1">GitHub</span></button>
+          <button type="button" class="btn btn-lg btn-outline-dark" id="button2" onclick="randomProject()">Random project</button>
+          <button type="button" class="btn btn-lg btn-outline-dark" id="darklight" onclick="darkTheme()"><i class="fa-solid fa-moon"></i> Change Theme</button>
         </div>
       </div>
       
     </div>
   </section>
   </div>
-    <div class="album py-5">
-      <div class="title"><h1>What I'm working on</h1></div>
+    <div class="album py-5"  id="main">
+      <div class="title" id="main-title"><h1>What I'm working on</h1></div>
         <div class="container">
     
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3" id="main-cards">
             <div class="col d-flex">
               <div class="card shadow-sm animate__animated animate__fadeIn animate__delay-1s">
                 <img src="https://cloud-3reetnjyw-hack-club-bot.vercel.app/0image.png" alt="Weather Somewhere" class="img-fluid" onclick="openWS()">
@@ -322,11 +323,11 @@
               
               <div class="col d-flex">
                 <div class="card shadow-sm animate__animated animate__fadeIn animate__delay-1s">
-                  <img id="websites" src="websites-light.png" alt="This website" class="img-fluid" onclick="openWebsites()">
+                  <img id="websites" src="websites.png" alt="This website" class="img-fluid" onclick="openWebsites()">
                   <div class="card-body">
                     <h3 class="card-text project-title">This website</h3>
                     <p class="card-text">This website.<br>https://fishtested.netlify.app <a href="https://www.pexels.com/photo/blue-and-purple-cosmic-sky-956999/">Header background photo by Felix Mittermeier</a> </p>
-                    <h4 class="card-text"><span class="lines">640 lines</span> 84 commits</h4>
+                    <h4 class="card-text"><span class="lines">640 lines</span> 88 commits</h4>
                     <img class="deploy" src="https://api.netlify.com/api/v1/badges/f4c98e94-900f-4331-ac2d-a94854cb896f/deploy-status">
                     <div class="bd-example m-0 border-0">
                       <div class="progress-stacked">
