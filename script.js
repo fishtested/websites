@@ -23,13 +23,6 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 } else {
     simpletime.src = 'simpletime-light.png'
 }
-// This website
-const websites =  document.getElementById('websites')
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    websites.src = 'websites-dark.png'
-} else {
-    websites.src = 'websites-light.png'
-}
 }
 updateImages();
 
@@ -96,11 +89,6 @@ function randomProject() {
         }
     }
 }
-function placeholder() {
-    if (confirm("Insert text here")) {
-        window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-    }
-}
 function openWS() {
     window.location.href='https://weather.dino.icu'
 }
@@ -125,9 +113,33 @@ function openCF() {
 function openGaP() {
     window.location.href='https://generateapassphrase.netlify.app'
 }
-function openWebsites() {
-    window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-}
 function openCF() {
     window.location.href='https://fishtested.github.io/Christmas-facts/'
 }
+
+function darkTheme() {
+    var main = document.getElementById("main");
+    main.classList.toggle("dark-theme");
+    var maintitle = document.getElementById("main-title");
+    maintitle.classList.toggle("dark-theme");
+    var maincards = document.getElementById("main-cards");
+    maincards.classList.toggle("dark-theme")
+    var mainbody = document.getElementById("main-heading");
+    mainbody.classList.toggle("dark-theme")
+    var button1 = document.getElementById("button1");
+    button1.classList.toggle("dark-theme-buttons")
+    var button2 = document.getElementById("button2");
+    button2.classList.toggle("dark-theme-buttons")
+
+    // AI Disclosure: I used ChatGPT to help change the icons
+    var button = document.getElementById("darklight");
+    var icon = button.querySelector("i");
+
+    if (icon.classList.contains("fa-moon")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+  } 
