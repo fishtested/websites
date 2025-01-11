@@ -143,3 +143,16 @@ function darkTheme() {
         icon.classList.add("fa-moon");
     }
   } 
+
+window.addEventListener("scroll", function () {
+    const backToTop = document.querySelector(".back-to-top");
+    if (window.scrollY > 250) {
+    backToTop.classList.add("btt-show");
+    } else {
+        backToTop.classList.remove("btt-show");
+        }
+        });
+                      
+    function backToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
