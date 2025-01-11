@@ -165,3 +165,23 @@ a:hover {
     background-color: rgb(65, 65, 65);
     color: #ffffff;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    }
+                      
+.back-to-top.btt-show {
+    opacity: 1;
+    visibility: visible;
+}
