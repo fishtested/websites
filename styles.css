@@ -38,7 +38,11 @@ margin-bottom: 10px;
     color: #ffffff;
 }
 .progress-bar.js {
-    background-color: #f5da61;
+    background-color: #fdde46;
+    color: #000000;
+}
+.progress-bar.python {
+    background-color: #ffde6b;
     color: #000000;
 }
 
